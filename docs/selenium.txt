@@ -1,0 +1,4 @@
+Existem 3 pontos de fragilidade em uma automação
+1- seletor errado, seletor mudou, seletor dinamico
+2- sincronismo (tipos de espera)
+3- programação exótica automação n reconhece por algo incrivel, inovador ou com certos erros
