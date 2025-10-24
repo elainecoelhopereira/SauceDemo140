@@ -41,5 +41,6 @@ class TestSelecionarProduto():
     assert self.driver.find_element(By.CSS_SELECTOR, "*[data-test=\"inventory-item-price\"]").text == "$29.99"
     self.driver.find_element(By.CSS_SELECTOR, "*[data-test=\"remove-sauce-labs-backpack\"]").click()
     self.driver.find_element(By.ID, "react-burger-menu-btn").click()
+    # time.sleep(2) # parando o processamento / thread por 2 segundos <-- Pior - uso apenas temporário
     self.driver.find_element(By.CSS_SELECTOR, "*[data-test=\"logout-sidebar-link\"]").click()
   
