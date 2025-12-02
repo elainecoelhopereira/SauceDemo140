@@ -4,10 +4,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # 2 - Classe (Opcional)
-class Test_Produtos():
+class Test_Produtos():  #classe mãe p facilitar q os irmãos se comuniquem
 
     # 2.1 Atributos
-    url = "https://www.saucedemo.com"              # endereço do site alvo
+    url = "https://www.saucedemo.com"              # endereço do site alvo  #criar um atribulto n classe q vai chamar de url, url recebe o endereço htt...
 
     # 2.2 Funções e Métodos
     def setup_method(self, method):                # método de inicialização dos testes
@@ -19,8 +19,8 @@ class Test_Produtos():
 
     def test_selecionar_produto(self):             # método de teste
         self.driver.get(self.url)                  # abre o navegador
-        self.driver.find_element(By.ID, "user-name").send_keys("standard_user")             # escreve no campo user-name
-        self.driver.find_element(By.NAME, "password").send_keys("secret_sauce")             # escreve a senha 
+        self.driver.find_element(By.ID, "user-name").send_keys("standard_user")               # escreve no campo user-name
+        self.driver.find_element(By.NAME, "password").send_keys("secret_sauce")               # escreve a senha 
         self.driver.find_element(By.CSS_SELECTOR, "input.submit-button.btn_action").click()   # clique no botão de login
 
         # transição de página
