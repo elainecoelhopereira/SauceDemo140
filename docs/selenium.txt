@@ -2,3 +2,20 @@ Existem 3 pontos de fragilidade em uma automação
 1- seletor errado, seletor mudou, seletor dinamico
 2- sincronismo (tipos de espera)
 3- programação exótica automação n reconhece por algo incrivel, inovador ou com certos erros
+
+Formas de Criação e Organização de script de teste
+
+1- Gravação (Capture & Playback / Record & Play) 
+2- Exportação e Importação do código fonte - usamos um gravador, usou exportou
+3- Criar o Script Simples manualmente  → 1 script de teste  = 1 arquivo
+4- 4- Script com Cucumber / Behave  → 1 teste =2 arquivos (.feature q é escrito em Gherkin e .py q é o script de automação)
+
+
+
+BDD = Behavior Driven Development = Desenvolvimento direcionado por comportamento
+- - → Foco no comportamento esperado do software → Dito pelo PO (Product Owner)
+
+→ Critério de Aceitação  --> Escrito na Sintaxe Gherkin
+Dado - Quando - Então
+cucumber.io tem uma parte de documentação
+
